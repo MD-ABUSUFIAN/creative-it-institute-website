@@ -5,13 +5,18 @@
 }
 i{
     font-size: 20px;
-    margin: 5px;
+    padding: 5px;
     text-align: center;
-    
-    
 }
+.fa-star, .fa-star-half-stroke{
+    padding: 0px;
+    font-size:14px;
+    color: rgb(255,174,79);
+}
+
 a{
     text-decoration: none;
+    color: black;
 }
 ul{
     list-style: none;
@@ -123,12 +128,26 @@ nav{
     display: flex;
 }
 .navBarSection>ul>li{
+    padding: 2px;
     margin-left: 20px;
     font-size: 18px;
     line-height: 14px;
     font-weight: 600;
     color:rgb(31, 30, 30) ;
 }
+.navBarSection>ul>li>a{
+    padding: 8px;
+    transition: all  0.4s ease;
+}
+.navBarSection>ul>li>a:hover{
+    color: red;
+    background-color: white;
+    border-radius:7px ; 
+    padding-bottom: 4px;
+    border-bottom: 4px solid red;
+
+}
+
 
 
 /* Banner Section Style  */
@@ -325,6 +344,7 @@ nav{
    
 }
 
+
 .courseCardSection{
     display: flex;
     flex-wrap: wrap;
@@ -413,9 +433,8 @@ nav{
     border: 1px solid red;
 } */
 .courseCardSection>.courseCard:hover{
-    transition:  ease-in-out 0.7s;
     transform: scale(1.1);
-
+    transition:all ease-in-out 0.8s ;
 }
  /* student Counter ratio secton style  */
  .studentCardSection{
